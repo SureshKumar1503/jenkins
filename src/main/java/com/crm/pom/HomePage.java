@@ -17,7 +17,6 @@ public class HomePage extends Base_logIn {
 		PageFactory.initElements(driver,this);
 		}
 	public void orgs() {
-		// TODO Auto-generated method stub
 		
 	}
     

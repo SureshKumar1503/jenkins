@@ -11,6 +11,7 @@ import BaseOfwebdriver.WebDriverUtility;
 public class Test1A extends Base_logIn {
 	WebDriverUtility wd= new WebDriverUtility();
 	crm_pom cm=new crm_pom(driver);
+	Base_logIn bl = new Base_logIn();
   @Test
 	public void tc1() throws InterruptedException {
 	  
@@ -19,6 +20,7 @@ public class Test1A extends Base_logIn {
 		or.org();
 		or.name1();
 		or.btn();
+		bl.logOut();
 		wd.waitForElementVisibility(driver, cm.houver());
 		
 		}

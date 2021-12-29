@@ -9,14 +9,14 @@ import org.testng.annotations.Test;
 
 import Base.Baseclass;
 
-public class LeadsTc1 extends Baseclass {
+public class LeadsTc1Test extends Baseclass {
 	
-	@Test
+	@Test (groups= {"regression"})
 	public void tc1() {
 		driver.findElement(By.xpath("//a[text()='Leads']")).click();
 		driver.findElement(By.xpath("//img[@alt='Create Lead...']")).click();
 		
-		driver.findElement(By.name("lastname")).sendKeys("suresh");
+		driver.findElement(By.name("lastname")).sendKeys("suresh1");
 		driver.findElement(By.name("company")).sendKeys("testyantra");
 		WebElement redio = driver.findElement(By.xpath("(//input[@name='assigntype'])[2]"));
 		redio.click() ;

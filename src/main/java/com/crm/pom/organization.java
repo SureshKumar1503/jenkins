@@ -47,11 +47,13 @@ import raina.propertiesUtility;
 		public void name1()
 		{
 			organization or = new organization(driver);
-			or.acc().sendKeys("manooon");
+			or.acc().sendKeys("manooooon");
 					}
 	
 		@FindBy(name="button")
 		private WebElement btnn;
+		
+		
 		
 		public void btn() {
 			

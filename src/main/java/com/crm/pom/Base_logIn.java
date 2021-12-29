@@ -15,6 +15,7 @@ public class Base_logIn {
 	public WebDriver driver;
 	propertiesUtility p=new propertiesUtility();
 	WebDriverUtility wd=new WebDriverUtility();
+	crm_pom cr = new crm_pom(driver);     
 	@BeforeMethod
 	public void loginweb() throws IOException 
 		{
@@ -31,7 +32,7 @@ public class Base_logIn {
 	@AfterMethod
 	public void logOut()
 	{
-		crm_pom cr = new crm_pom(driver);
+		
 		cr.singout();
 		
 		driver.close();

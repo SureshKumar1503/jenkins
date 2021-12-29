@@ -3,17 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Leads.LeadTc11Test">
+      <class name="com.crm.pomTest.Test1A">
         <methods>
-          <include name="webclose"/>
-          <include name="closeconnection"/>
-          <include name="configWebDrive"/>
-          <include name="login"/>
-          <include name="logout"/>
-          <include name="dbconnect"/>
-          <include name="Tc10"/>
+          <include name="logOut"/>
+          <include name="loginweb"/>
+          <include name="tc1"/>
         </methods>
-      </class> <!-- Leads.LeadTc11Test -->
+      </class> <!-- com.crm.pomTest.Test1A -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

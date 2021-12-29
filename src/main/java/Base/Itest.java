@@ -4,6 +4,9 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+import com.aventstack.extentreports.reporter.ExtentReporter;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+
 public class Itest extends Baseclass implements ITestListener   {
 
 	public void onTestStart(ITestResult result) {
@@ -30,6 +33,12 @@ public class Itest extends Baseclass implements ITestListener   {
 	}
 
 	public void onStart(ITestContext context) {
+		ExtentSparkReporter htmlreport = new ExtentSparkReporter("./extentReport.html");
+		
+		htmlreport.config().setDocumentTitle("vtiger");
+		
+		
+		
 	}
 
 	public void onFinish(ITestContext context) {
