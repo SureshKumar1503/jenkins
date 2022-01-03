@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import Base.Baseclass;
 
 public class LeadTc11Test extends Baseclass{
-	@Test (groups= {"smoke"})
+	@Test (groups= {"smoke","regression"})
 	public void Tc10(){
 		driver.findElement(By.name("lastname")).sendKeys("KARTHI");
 		driver.findElement(By.name("company")).sendKeys("testyantra");

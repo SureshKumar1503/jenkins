@@ -3,10 +3,11 @@ package Leads;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
-import Base.BaseclassUtility;
+
+import Base.Baseclass;
 import BaseOfwebdriver.WebDriverUtility;
 
-	public class LeadTc7 extends BaseclassUtility{
+	public class LeadTc7 extends Baseclass{
 		WebDriverUtility wd=new WebDriverUtility();
 		
 		@Test

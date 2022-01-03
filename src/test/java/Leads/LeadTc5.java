@@ -4,12 +4,11 @@ import org.openqa.selenium.By;
 
 import org.testng.annotations.Test;
 
-import LeadSBASE.LeadsClass;
 
-public class LeadTc5 extends LeadsClass{
+public class LeadTc5 {
 @Test	
 public void Tc5() {
 	
-	driver.findElement(By.name("button")).click();
+	//driver.findElement(By.name("button")).click();
 }
 }

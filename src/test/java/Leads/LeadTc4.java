@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
-import LeadSBASE.LeadsClass;
+import Base.Baseclass;
 
-public class LeadTc4 extends LeadsClass {
+public class LeadTc4 extends Baseclass  {
 @Test
 	public void Tc4() {
 	driver.findElement(By.name("lastname")).sendKeys("suresh");

@@ -32,14 +32,14 @@ public LogOut lgo = new LogOut();
 	//public static WebDriver sd; 
 	
 	
-	@BeforeSuite
+	@BeforeSuite (groups={"smoke","regression"})
 	public void dbconnect() throws SQLException {
 
 		System.out.println("data base connection");
 		db1.ConnectToDatabase();
 	}
 
-	@BeforeClass
+	@BeforeClass (groups={"smoke","regression"})
 	public void configWebDrive() {
 		System.out.println("****webdriver browser connection*****");
 		driver = new ChromeDriver();
@@ -48,24 +48,24 @@ public LogOut lgo = new LogOut();
 
 	}
 
-	@BeforeMethod
+	@BeforeMethod (groups={"smoke","regression"})
 	public void login() throws IOException {
 		lg.loginTest(driver);
 	}
 
-	@AfterMethod
+	@AfterMethod (groups={"smoke","regression"})
 	public void logout() {
 		lgo.closeapp(driver);
 	}
 
-	@AfterClass
+	@AfterClass (groups={"smoke","regression"})
 	public void webclose() {
 		System.out.println("close browser");
 		driver.close();
 
 	}
 
-	@AfterSuite
+	@AfterSuite (groups={"smoke","regression"})
 	public void closeconnection() throws SQLException {
 		db1.closeDB();
 	}

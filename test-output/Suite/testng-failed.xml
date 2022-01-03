@@ -4,20 +4,32 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-        <include name="ST"/>
+        <include name="regression"/>
       </run>
     </groups>
     <classes>
-      <class name="Leads.LeadTc11">
+      <class name="Leads.LeadsTc2Test">
         <methods>
-          <include name="Tc10"/>
+          <include name="webclose"/>
+          <include name="industri"/>
+          <include name="closeconnection"/>
+          <include name="configWebDrive"/>
+          <include name="login"/>
+          <include name="logout"/>
+          <include name="dbconnect"/>
         </methods>
-      </class> <!-- Leads.LeadTc11 -->
-      <class name="Leads.LeadTc13">
+      </class> <!-- Leads.LeadsTc2Test -->
+      <class name="Leads.LeadsTc1Test">
         <methods>
-          <include name="Tc10"/>
+          <include name="webclose"/>
+          <include name="closeconnection"/>
+          <include name="configWebDrive"/>
+          <include name="login"/>
+          <include name="logout"/>
+          <include name="dbconnect"/>
+          <include name="tc1"/>
         </methods>
-      </class> <!-- Leads.LeadTc13 -->
+      </class> <!-- Leads.LeadsTc1Test -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
